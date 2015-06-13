@@ -270,6 +270,8 @@
       [args addObjectsFromArray:@[
         @"-OTEST_TESTLIST_FILE", testListFilePath,
         @"-OTEST_FILTER_TEST_ARGS_KEY", _framework[kTestingFrameworkFilterTestArgsKey],
+        [@"-" stringByAppendingString:_framework[kTestingFrameworkFilterTestArgsKey]],
+        @"XCTOOL_FAKE_LIST_OF_TESTS",
       ]];
     }
   }
